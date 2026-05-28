@@ -1,0 +1,602 @@
+[
+  {
+    "full_name": "Максим Кузнецов",
+    "age": 30,
+    "address": {
+      "city": "Томск",
+      "district": "Октябрьский"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Дарья Соколова",
+    "age": 34,
+    "address": {
+      "city": "Хабаровск",
+      "district": "Центральный"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Елена Соколова",
+    "age": 34,
+    "address": {
+      "city": "Томск",
+      "district": "Октябрьский"
+    },
+    "speciality": "учитель",
+    "desired_course": "Project Management",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Константин Белов",
+    "age": 34,
+    "address": {
+      "city": "Томск",
+      "district": "Советский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Дарья Соколова",
+    "age": 30,
+    "address": {
+      "city": "Красноярск",
+      "district": "Октябрьский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Злата Морозова",
+    "age": 34,
+    "address": {
+      "city": "Томск",
+      "district": "Советский"
+    },
+    "speciality": "музыкант",
+    "desired_course": "Project Management",
+    "years_of_experience": 12,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Полина Кузнецова",
+    "age": 30,
+    "address": {
+      "city": "Томск",
+      "district": "Ленинский"
+    },
+    "speciality": "бухгалтер",
+    "desired_course": "Управление персоналом",
+    "years_of_experience": 8,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Ольга Громова",
+    "age": 34,
+    "address": {
+      "city": "Хабаровск",
+      "district": "Центральный"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Денис Соколов",
+    "age": 30,
+    "address": {
+      "city": "Тюмень",
+      "district": "Центральный"
+    },
+    "speciality": "программист",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 5,
+    "graduation_year": 2017
+  },
+  {
+    "full_name": "Дарья Морозова",
+    "age": 32,
+    "address": {
+      "city": "Владивосток",
+      "district": "Первомайский"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Project Management",
+    "years_of_experience": 8,
+    "graduation_year": 2014
+  },
+  {
+    "full_name": "Денис Захаров",
+    "age": 40,
+    "address": {
+      "city": "Тверь",
+      "district": "Центральный"
+    },
+    "speciality": "летчик",
+    "desired_course": "Project Management",
+    "years_of_experience": 15,
+    "graduation_year": 2002
+  },
+  {
+    "full_name": "Ксения Белова",
+    "age": 30,
+    "address": {
+      "city": "Иркутск",
+      "district": "Октябрьский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Илья Морозов",
+    "age": 34,
+    "address": {
+      "city": "Казань",
+      "district": "Ново-Савиновский"
+    },
+    "speciality": "учитель",
+    "desired_course": "Управление персоналом",
+    "years_of_experience": 8,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Виктор Зайцев",
+    "age": 34,
+    "address": {
+      "city": "Тверь",
+      "district": "Центральный"
+    },
+    "speciality": "программист",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 8,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Елена Ковалёва",
+    "age": 34,
+    "address": {
+      "city": "Томск",
+      "district": "Советский"
+    },
+    "speciality": "юрист",
+    "desired_course": "Финансовый менеджмент",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Евгения Кузнецова",
+    "age": 30,
+    "address": {
+      "city": "Тверь",
+      "district": "Заволжский"
+    },
+    "speciality": "артист",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 8,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Екатерина Воронова",
+    "age": 30,
+    "address": {
+      "city": "Тольятти",
+      "district": "Автозаводский"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Алексей Соколов",
+    "age": 30,
+    "address": {
+      "city": "Томск",
+      "district": "Октябрьский"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Мария Кузнецова",
+    "age": 34,
+    "address": {
+      "city": "Тюмень",
+      "district": "Центральный"
+    },
+    "speciality": "учитель",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 8,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Алексей Смирнов",
+    "age": 30,
+    "address": {
+      "city": "Томск",
+      "district": "Советский"
+    },
+    "speciality": "юрист",
+    "desired_course": "Project Management",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Вера Сорокина",
+    "age": 28,
+    "address": {
+      "city": "Томск",
+      "district": "Советский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 5,
+    "graduation_year": 2018
+  },
+  {
+    "full_name": "Василий Некрасов",
+    "age": 34,
+    "address": {
+      "city": "Тюмень",
+      "district": "Центральный"
+    },
+    "speciality": "музыкант",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Евгений Кириллов",
+    "age": 40,
+    "address": {
+      "city": "Хабаровск",
+      "district": "Индустриальный"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 15,
+    "graduation_year": 2006
+  },
+  {
+    "full_name": "Екатерина Соколова",
+    "age": 34,
+    "address": {
+      "city": "Калининград",
+      "district": "Центральный"
+    },
+    "speciality": "программист",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Елена Воробьёва",
+    "age": 38,
+    "address": {
+      "city": "Калининград",
+      "district": "Центральный"
+    },
+    "speciality": "бухгалтер",
+    "desired_course": "Финансовый менеджмент",
+    "years_of_experience": 15,
+    "graduation_year": 2008
+  },
+  {
+    "full_name": "Василиса Соколова",
+    "age": 30,
+    "address": {
+      "city": "Калининград",
+      "district": "Центральный"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 5,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Екатерина Белова",
+    "age": 30,
+    "address": {
+      "city": "Томск",
+      "district": "Советский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Василиса Кузнецова",
+    "age": 34,
+    "address": {
+      "city": "Иркутск",
+      "district": "Свердловский"
+    },
+    "speciality": "учитель",
+    "desired_course": "Управление персоналом",
+    "years_of_experience": 10,
+    "graduation_year": 2014
+  },
+  {
+    "full_name": "Владислава Ермолаева",
+    "age": 34,
+    "address": {
+      "city": "Хабаровск",
+      "district": "Центральный"
+    },
+    "speciality": "врач",
+    "desired_course": "Управление персоналом",
+    "years_of_experience": 10,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Арсений Захаров",
+    "age": 34,
+    "address": {
+      "city": "Томск",
+      "district": "Советский"
+    },
+    "speciality": "юрист",
+    "desired_course": "Project Management",
+    "years_of_experience": 12,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Дмитрий Орлов",
+    "age": 34,
+    "address": {
+      "city": "Тверь",
+      "district": "Центральный"
+    },
+    "speciality": "музыкант",
+    "desired_course": "Финансовый менеджмент",
+    "years_of_experience": 12,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Максим Соколов",
+    "age": 30,
+    "address": {
+      "city": "Хабаровск",
+      "district": "Железнодорожный"
+    },
+    "speciality": "программист",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Андрей Соколов",
+    "age": 34,
+    "address": {
+      "city": "Калининград",
+      "district": "Ленинградский"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Илья Вавилов",
+    "age": 34,
+    "address": {
+      "city": "Тверь",
+      "district": "Заволжский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 8,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Виктор Смирнов",
+    "age": 34,
+    "address": {
+      "city": "Калининград",
+      "district": "Ленинградский"
+    },
+    "speciality": "учитель",
+    "desired_course": "Управление персоналом",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Елена Кузнецова",
+    "age": 30,
+    "address": {
+      "city": "Томск",
+      "district": "Кировский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 8,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Алиса Козлова",
+    "age": 27,
+    "address": {
+      "city": "Калининград",
+      "district": "Ленинградский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Английский для бизнеса",
+    "years_of_experience": 4,
+    "graduation_year": 2018
+  },
+  {
+    "full_name": "Дмитрий Соколов",
+    "age": 30,
+    "address": {
+      "city": "Томск",
+      "district": "Кировский"
+    },
+    "speciality": "переводчик",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Елена Соколова",
+    "age": 30,
+    "address": {
+      "city": "Иркутск",
+      "district": "Свердловский"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Дмитрий Соколов",
+    "age": 30,
+    "address": {
+      "city": "Томск",
+      "district": "Октябрьский"
+    },
+    "speciality": "музыкант",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 7,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Вероника Сорокина",
+    "age": 30,
+    "address": {
+      "city": "Хабаровск",
+      "district": "Центральный"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Project Management",
+    "years_of_experience": 7,
+    "graduation_year": 2017
+  },
+  {
+    "full_name": "Ирина Соколова",
+    "age": 30,
+    "address": {
+      "city": "Калининград",
+      "district": "Центральный"
+    },
+    "speciality": "учитель",
+    "desired_course": "Управление персоналом",
+    "years_of_experience": 8,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Елена Соколова",
+    "age": 34,
+    "address": {
+      "city": "Красноярск",
+      "district": "Октябрьский"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Кирилл Трофимов",
+    "age": 34,
+    "address": {
+      "city": "Томск",
+      "district": "Советский"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 12,
+    "graduation_year": 2010
+  },
+  {
+    "full_name": "Марина Золотова",
+    "age": 30,
+    "address": {
+      "city": "Тюмень",
+      "district": "Центральный"
+    },
+    "speciality": "дизайнер",
+    "desired_course": "Digital Marketing",
+    "years_of_experience": 8,
+    "graduation_year": 2016
+  },
+  {
+    "full_name": "Елена Соколова",
+    "age": 42,
+    "address": {
+      "city": "Тверь",
+      "district": "Центральный"
+    },
+    "speciality": "учитель",
+    "desired_course": "Управление персоналом",
+    "years_of_experience": 15,
+    "graduation_year": 2005
+  },
+  {
+    "full_name": "Кирилл Морозов",
+    "age": 42,
+    "address": {
+      "city": "Красноярск",
+      "district": "Советский"
+    },
+    "speciality": "бухгалтер",
+    "desired_course": "Финансовый менеджмент",
+    "years_of_experience": 18,
+    "graduation_year": 2004
+  },
+  {
+    "full_name": "Дмитрий Белов",
+    "age": 34,
+    "address": {
+      "city": "Казань",
+      "district": "Приволжский"
+    },
+    "speciality": "программист",
+    "desired_course": "Python для анализа данных",
+    "years_of_experience": 8,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "София Ковалёва",
+    "age": 34,
+    "address": {
+      "city": "Калининград",
+      "district": "Центральный"
+    },
+    "speciality": "музыкант",
+    "desired_course": "Project Management",
+    "years_of_experience": 10,
+    "graduation_year": 2012
+  },
+  {
+    "full_name": "Илья Соколов",
+    "age": 42,
+    "address": {
+      "city": "Хабаровск",
+      "district": "Центральный"
+    },
+    "speciality": "артист",
+    "desired_course": "Project Management",
+    "years_of_experience": 15,
+    "graduation_year": 2005
+  }
+]
