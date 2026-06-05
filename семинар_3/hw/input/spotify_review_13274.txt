@@ -1,0 +1,8 @@
+ID: spotify_review_13274
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 3/5 (neutral)
+Полезных: 0
+
+Текст отзыва:
+Wifi is all working fine but the songs dont play, using premium as well, dunno whats going on with the app.

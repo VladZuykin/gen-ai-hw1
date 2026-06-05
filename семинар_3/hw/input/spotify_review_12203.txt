@@ -1,0 +1,8 @@
+ID: spotify_review_12203
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 1/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+At first it worked perfectly but now I cannot even log in

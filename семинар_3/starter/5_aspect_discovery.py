@@ -44,8 +44,43 @@ MODEL = get_model()
 
 def discover_aspects(transcript: str) -> DiscoveredAspects:
     """Стадия A: что вообще обсуждали в этом транскрипте?"""
-    # TODO: один вызов модели, response_model=DiscoveredAspects.
-    raise NotImplementedError
+    lines = transcript.split('\n')
+    start_idx = 0
+    for i, line in enumerate(lines):
+        if '═══' in line:
+            start_idx = i + 1
+            break
+    
+    # Берём только реплики участников (без модератора)
+    participant_lines = []
+    skip_moderator = False
+    
+    for line in lines[start_idx:]:
+        if 'Модератор:' in line:
+            skip_moderator = True
+            continue
+        elif line.strip() and not skip_moderator:
+            participant_lines.append(line)
+        elif 'Анна:' in line or 'Игорь:' in line or 'Дарья:' in line or 'Сергей:' in line:
+            skip_moderator = False
+            participant_lines.append(line)
+    
+    clean_transcript = '\n'.join(participant_lines)
+    
+    messages = [
+        {"role": "system", "content": DISCOVER_SYSTEM},
+        {"role": "user", "content": f"Выдели ключевые темы из этого транскрипта фокус-группы:\n\n{clean_transcript}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=DiscoveredAspects,
+        max_retries=3,
+        temperature=0.3  # Немного творчества для лучшего обнаружения
+    )
+    
+    return result
 
 
 def extract_with_discovered(
@@ -58,8 +93,46 @@ def extract_with_discovered(
         "Используй СТРОГО эти аспекты:\n- price (...)\n- speed (...)"
     и положи в system-промпт перед запросом.
     """
-    # TODO
-    raise NotImplementedError
+    # Формируем динамический промпт со списком обнаруженных тем
+    aspects_list = "\n".join([
+        f"- {a.name}: {a.description}" 
+        for a in discovered.aspects
+    ])
+    
+    dynamic_prompt = f"""Ты — анализатор тональности транскриптов фокус-групп.
+
+ОБНАРУЖЕННЫЕ ТЕМЫ (используй ТОЛЬКО их):
+{aspects_list}
+
+ЗАДАЧА:
+Для каждого участника определи, какие темы из списка выше он упоминал, и с какой тональностью.
+
+ПРАВИЛА:
+1. ОТВЕЧАЙ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ
+2. Используй ТОЛЬКО темы из предоставленного списка (не придумывай свои)
+3. Указывай ТОЛЬКО темы, которые УПОМЯНУТЫ в речи участника
+4. Каждая оценка ДОЛЖНА сопровождаться ДОСЛОВНОЙ цитатой из транскрипта
+5. Тональность: positive/ neutral/ negative
+
+ФОРМАТ ОТВЕТА:
+Верни список участников, для каждого — список упомянутых тем с тональностью и цитатами.
+
+ВАЖНО: НЕ добавляй темы, которых нет в списке выше!"""
+    
+    messages = [
+        {"role": "system", "content": dynamic_prompt},
+        {"role": "user", "content": f"Проанализируй транскрипт и оцени каждого участника по обнаруженным темам:\n\n{transcript}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=list[ParticipantSentiment],
+        max_retries=3,
+        temperature=0.0
+    )
+    
+    return result
 
 
 def main() -> None:

@@ -1,0 +1,527 @@
+[
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "positive",
+        "quote": "Good music, not as many commercials"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "At first it worked perfectly but now I cannot even log in"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "positive",
+        "quote": "The only place I can hear Dimash with out to much interuption."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Wifi is all working fine but the songs dont play, using premium as well"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "This app is good but one problem is adverticement."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Spotify has been the best music app have seen in my entire life, kudos to the originator"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "This new shuffle music is Weird Next level irritating."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "annoyed that I get Ads on podcasts when I pay for premium service"
+      },
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "issues with the now playing function not working correctly- example playing joe rogan podcast and its telling me nothing is playing."
+      },
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Easy to use and make Playlists as well."
+      },
+      {
+        "aspect": "price",
+        "sentiment": "positive",
+        "quote": "Took advantage of the 3 month free trial and happy to continue to pay for premium"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "negative",
+        "quote": "I love Spotify and cant really complain EXCEPT........they removed song previews when you are choosing songs for a playlist!"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "Its a good app but when it says Enjoy your next 30 minutes and then when 1 or 2 or 3 songs in it starts playing ads please fix this Thanks!"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "Downloaded the app but it is not opening."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "negative",
+        "quote": "But... this new update is so terrible. You cant repeat Playlist or songs anymore."
+      },
+      {
+        "aspect": "price",
+        "sentiment": "negative",
+        "quote": "I really want that back but without having to pay for premium"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "Ads so many ads kinda to much ngl"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "But theres so many bugs. Once it undownloaded all of my downloaded songs, thus creating the most boring aeroplane ride of my life."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "When connected to a Bluetooth speaker, it will play one second and then stop."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Cannot use microphone to find songs constant loading"
+      },
+      {
+        "aspect": "design",
+        "sentiment": "negative",
+        "quote": "not easy to find just albums when looking up artists it always gives you a playlist of greatest hits when you just want an album."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "I havr generally liked the app, but this last update has been extremely buggy."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "It is a paid service and we expect more reliability."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "negative",
+        "quote": "songs no longer appear on the bottom as they are playing."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "The app is buggy, not playing music while taking my subscription fees"
+      },
+      {
+        "aspect": "price",
+        "sentiment": "negative",
+        "quote": "The app is buggy, not playing music while taking my subscription fees"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Have to keep resetting the app because it wont let me see the song playing."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "the past week my music keeps stopping, the song infocontrol dissapears, I keep getting logged out"
+      },
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "I keep getting logged out and then error messages when trying to log in."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "Customer service is a complete nightmare."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Long load time if you have many downloaded songs 5k for me."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "I like the app but when I try to listen to my favorite song it turn into another song can you please remove that its really annoying"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "App sometimes freezes on my Huawei tablet."
+      },
+      {
+        "aspect": "support",
+        "sentiment": "negative",
+        "quote": "No support to cast own library"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "Tracks constantly stop playing. Have set all streaming settings to the minimum and enabled the app to run in the background."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "when I try to listen to a song by itself it plays a different song this is very frustrating"
+      },
+      {
+        "aspect": "price",
+        "sentiment": "negative",
+        "quote": "the restrictions for people with out premium, Like I get Spotify needs there money to but because of limited skips I feel like I have no control on this app."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "Its amazing although it has way too many ads"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "Really good just alot of ads and it gets annoying"
+      },
+      {
+        "aspect": "price",
+        "sentiment": "positive",
+        "quote": "better than YouTube premium if you cant afford it."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "whenever I finish a playlist it just starts to play random songs amd theres no way to stop it."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "There is a glitch in the scrolling within the liked songs list."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "The play button is sometimes there sometimes not."
+      },
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "If you download an episode of a podcast it does not matter because you cant use this worthless app if you dont have data."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "price",
+        "sentiment": "negative",
+        "quote": "Great but doesnt accept all types of credit card payments."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Ive had Spotify since 2016 and all I have to say its an amazing app time capsules yearly playlists personalised playlist"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "Spotify sucks so bad they just want to push premium and shove ads up peoples butts."
+      },
+      {
+        "aspect": "price",
+        "sentiment": "negative",
+        "quote": "youtube premium is a much better deal than spotify"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "I love the app but I hate that they add random songs it is sooooo annoying."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "Its a great app to use to listen to music and to meditate"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "positive",
+        "quote": "even its adds are interesting."
+      },
+      {
+        "aspect": "price",
+        "sentiment": "positive",
+        "quote": "Premium comes and small prices and it has a wide variety of songs"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "when ever I use the search button it shows a blank screen for 5 minutes and then closes the app"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "it goes thru tumes where the pause button disappears"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "price",
+        "sentiment": "positive",
+        "quote": "even without premium you still get great music options and an awesome experience!"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "from last week it doesnt show the hindi lyrics for the song,it shows hindi words in english"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "positive",
+        "quote": "It a nice app...it has useful notifications plus the lyrics when the song is playing"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "neutral",
+        "quote": "Would like a seek bar on android auto."
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "design",
+        "sentiment": "neutral",
+        "quote": "Spotify please can you have a chat feature???"
+      }
+    ]
+  }
+]

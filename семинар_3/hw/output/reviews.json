@@ -1,0 +1,826 @@
+[
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "ads",
+        "text": "fewer commercials",
+        "quote": "not as many commercials"
+      }
+    ],
+    "issues": [],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "reliability",
+        "text": "Cannot log in",
+        "quote": "now I cannot even log in"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "reliability",
+        "text": "No interruption",
+        "quote": "with out to much interuption"
+      }
+    ],
+    "issues": [],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "reliability",
+        "text": "Songs don't play",
+        "quote": "the songs dont play"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "ads",
+        "text": "Too many advertisements",
+        "quote": "one problem is adverticement"
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "design",
+        "text": "Graphics and composure are top notch",
+        "quote": "from the graphics and composure all are top notch"
+      }
+    ],
+    "issues": [],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "reliability",
+        "text": "Missing songs available on YouTube",
+        "quote": "some songs what is on YouTube arent on spotify"
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "New shuffle music is irritating",
+        "quote": "This new shuffle music is Weird Next level irritating."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "design",
+        "text": "Easy to use and make playlists",
+        "quote": "Easy to use and make Playlists as well."
+      }
+    ],
+    "issues": [
+      {
+        "aspect": "ads",
+        "text": "Ads on podcasts for premium users",
+        "quote": "annoyed that I get Ads on podcasts when I pay for premium service"
+      },
+      {
+        "aspect": "performance",
+        "text": "Now playing function not working",
+        "quote": "issues with the now playing function not working correctly"
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "design",
+        "text": "Removed song previews for playlists",
+        "quote": "they removed song previews when you are choosing songs for a playlist"
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "ads",
+        "text": "Ads play sooner than promised",
+        "quote": "when it says Enjoy your next 30 minutes and then when 1 or 2 or 3 songs in it starts playing ads"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "App not opening",
+        "quote": "Downloaded the app but it is not opening."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "design",
+        "text": "Useful and love it",
+        "quote": "Overall love this app it is so useful"
+      }
+    ],
+    "issues": [
+      {
+        "aspect": "design",
+        "text": "Cannot repeat playlist or songs anymore",
+        "quote": "You cant repeat Playlist or songs anymore."
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "ads",
+        "text": "Too many ads",
+        "quote": "Ads so many ads kinda to much ngl"
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "reliability",
+        "text": "Undownloaded all songs",
+        "quote": "Once it undownloaded all of my downloaded songs"
+      },
+      {
+        "aspect": "reliability",
+        "text": "Logged out and can't log back in",
+        "quote": "I also just got kicked out and cant log back in"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Plays one second then stops on Bluetooth",
+        "quote": "When connected to a Bluetooth speaker, it will play one second and then stop."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Constant loading when using microphone",
+        "quote": "Cannot use microphone to find songs constant loading"
+      },
+      {
+        "aspect": "design",
+        "text": "Not easy to find albums",
+        "quote": "not easy to find just albums when looking up artists"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Audio cutting out regularly",
+        "quote": "Audio cutting out regularly"
+      },
+      {
+        "aspect": "performance",
+        "text": "Progress bar not showing up",
+        "quote": "the play progress bar not showing up"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Need to kill app to access playing song",
+        "quote": "Every time I want to access the current playing songpodcast, I have to kill the app and reopen"
+      },
+      {
+        "aspect": "performance",
+        "text": "App dies in middle of playing",
+        "quote": "the apps sometimes dies in the middle of playing"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "design",
+        "text": "Songs no longer appear at bottom while playing",
+        "quote": "songs no longer appear on the bottom as they are playing"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Buggy, not playing music despite subscription",
+        "quote": "not playing music while taking my subscription fees"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Have to reset app to see playing song",
+        "quote": "Have to keep resetting the app because it wont let me see the song playing."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Music keeps stopping",
+        "quote": "my music keeps stopping"
+      },
+      {
+        "aspect": "performance",
+        "text": "Song info disappears",
+        "quote": "the song infocontrol dissapears"
+      },
+      {
+        "aspect": "reliability",
+        "text": "Keeps getting logged out",
+        "quote": "I keep getting logged out"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "support",
+        "text": "Long wait time for customer support",
+        "quote": "Online chat takes no less than 30 mins to get even the simplest of answers."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Long load time with many downloads",
+        "quote": "Long load time if you have many downloaded songs 5k for me."
+      },
+      {
+        "aspect": "performance",
+        "text": "Music control bar disappears",
+        "quote": "causes the music control bar to disappear until the app is relaunched"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Song changes to another song when played",
+        "quote": "when I try to listen to my favorite song it turn into another song"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Playlist randomization is a joke",
+        "quote": "Playlist randomization is a joke."
+      },
+      {
+        "aspect": "performance",
+        "text": "App freezes on tablet",
+        "quote": "App sometimes freezes on my Huawei tablet."
+      },
+      {
+        "aspect": "design",
+        "text": "No support to cast own library",
+        "quote": "No support to cast own library"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Tracks constantly stop playing",
+        "quote": "Tracks constantly stop playing."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Plays different song when trying to listen to a specific song",
+        "quote": "when I try to listen to a song by itself it plays a different song"
+      },
+      {
+        "aspect": "price",
+        "text": "Restrictions for non-premium users",
+        "quote": "restrictions for people with out premium"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "ads",
+        "text": "Too many ads",
+        "quote": "way too many ads"
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "ads",
+        "text": "Lots of ads",
+        "quote": "just alot of ads"
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Plays random songs after playlist ends",
+        "quote": "whenever I finish a playlist it just starts to play random songs"
+      },
+      {
+        "aspect": "performance",
+        "text": "Shuffles songs instead of playing desired song",
+        "quote": "I want to listen to a song, but that song is shuffled with so much other songs"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Scrolling glitch in liked songs list",
+        "quote": "There is a glitch in the scrolling within the liked songs list."
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Play button sometimes missing",
+        "quote": "The play button is sometimes there sometimes not."
+      },
+      {
+        "aspect": "reliability",
+        "text": "Cannot use offline",
+        "quote": "you cant use this worthless app if you dont have data."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "price",
+        "text": "Does not accept all credit cards",
+        "quote": "doesnt accept all types of credit card payments."
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "design",
+        "text": "Time capsules, yearly playlists, personalised playlists",
+        "quote": "time capsules yearly playlists personalised playlist"
+      }
+    ],
+    "issues": [],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "ads",
+        "text": "Pushes premium and has too many ads",
+        "quote": "they just want to push premium and shove ads up peoples butts."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Adds random songs",
+        "quote": "they add random songs"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "design",
+        "text": "Great app for music and meditation",
+        "quote": "Its a great app to use to listen to music and to meditate"
+      }
+    ],
+    "issues": [],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "price",
+        "text": "Small prices for premium",
+        "quote": "Premium comes and small prices"
+      },
+      {
+        "aspect": "reliability",
+        "text": "Wide variety of songs",
+        "quote": "wide variety of songs"
+      }
+    ],
+    "issues": [],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 2,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Search button shows blank screen and crashes",
+        "quote": "when ever I use the search button it shows a blank screen for 5 minutes and then closes the app"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Pause button disappears",
+        "quote": "the pause button disappears"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "design",
+        "text": "Great music options even without premium",
+        "quote": "even without premium you still get great music options"
+      }
+    ],
+    "issues": [],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 3,
+    "sentiment": "neutral",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "design",
+        "text": "Hindi lyrics not showing correctly",
+        "quote": "it doesnt show the hindi lyrics for the song"
+      },
+      {
+        "aspect": "design",
+        "text": "English lyrics have spelling mistakes",
+        "quote": "english lyrics has so many spelling mistakes."
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 1,
+    "sentiment": "negative",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "performance",
+        "text": "Needs improvement for slow internet",
+        "quote": "Improvement to use slow internet connectin and use low mb"
+      }
+    ],
+    "would_recommend": false
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [
+      {
+        "aspect": "design",
+        "text": "Useful notifications",
+        "quote": "useful notifications"
+      },
+      {
+        "aspect": "design",
+        "text": "Lyrics when song is playing",
+        "quote": "lyrics when the song is playing"
+      }
+    ],
+    "issues": [],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 4,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [
+      {
+        "aspect": "design",
+        "text": "Missing seek bar on Android Auto",
+        "quote": "Would like a seek bar on android auto."
+      }
+    ],
+    "would_recommend": true
+  },
+  {
+    "app_name": "Spotify",
+    "username": "Anonymous",
+    "rating": 5,
+    "sentiment": "positive",
+    "likes": [],
+    "issues": [],
+    "would_recommend": true
+  }
+]

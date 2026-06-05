@@ -1,0 +1,8 @@
+ID: spotify_review_7359
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 1/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+Improvement to use slow internet connectin and use low mb

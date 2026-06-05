@@ -51,14 +51,53 @@ def reduce_group(group: list[ChunkSummary]) -> GroupSummary:
     Подсказка: похоже на reduce_summaries из раунда 3, но
     response_model=GroupSummary (более лёгкая, чем DiscussionSummary).
     """
-    # TODO
-    raise NotImplementedError
+    # Склеиваем резюме группы
+    group_text = f"## Группа из {len(group)} участников\n\n"
+    for i, summary in enumerate(group, 1):
+        group_text += f"### Участник {i} ({summary.speaker})\n"
+        group_text += f"Тезисы: {', '.join(summary.key_points)}\n"
+        group_text += f"Тональность: {summary.sentiment}\n\n"
+    
+    messages = [
+        {"role": "system", "content": GROUP_REDUCE_SYSTEM},
+        {"role": "user", "content": f"Агрегируй эти мини-резюме:\n\n{group_text}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=GroupSummary,
+        max_retries=3,
+        temperature=0.0
+    )
+    
+    return result
 
 
 def reduce_final(groups: list[GroupSummary]) -> DiscussionSummary:
     """Уровень 3: все групповые резюме → финальный DiscussionSummary."""
-    # TODO
-    raise NotImplementedError
+    # Склеиваем групповые резюме
+    groups_text = "## Групповые резюме\n\n"
+    for group in groups:
+        groups_text += f"### Группа {group.group_id}\n"
+        groups_text += f"Основные темы: {', '.join(group.main_themes)}\n"
+        groups_text += f"Инсайты: {', '.join(group.key_insights)}\n"
+        groups_text += f"Тональность: {group.sentiment_summary}\n\n"
+    
+    messages = [
+        {"role": "system", "content": REDUCE_SYSTEM},
+        {"role": "user", "content": f"Создай финальный свод на основе этих групповых резюме:\n\n{groups_text}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=DiscussionSummary,
+        max_retries=3,
+        temperature=0.0
+    )
+    
+    return result
 
 
 def hierarchical_summary(

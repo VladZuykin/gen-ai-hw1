@@ -38,20 +38,16 @@ MAX_WORKERS = 10
 
 def generate_one() -> tuple[Persona, dict]:
     """Один запрос → (валидная Persona, словарь с usage)."""
-    # TODO: дозаполни вызов client.chat.completions.create:
-    #   - response_model=Persona
-    #   - max_retries=3
-    #   - temperature=0.9
-    #   - messages из SYSTEM_PROMPT и USER_PROMPT
-    # Дополнительно — попроси клиент вернуть raw-ответ через
-    # `_raw_response=True` (если поддерживается обёрткой), либо считай
-    # токены через отдельный вызов с `response_format={"type":"json_object"}`.
-    #
-    # Подсказка: обёртка make_client() умеет возвращать кортеж
-    # (объект, completion), если передать with_completion=True.
     persona, completion = client.chat.completions.create(
-        ...,
-        with_completion=True,
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": USER_PROMPT},
+        ],
+        response_model=Persona,
+        max_retries=3,
+        temperature=0.9,
+        with_completion=True,  
     )
     usage = {
         "input_tokens": completion.usage.prompt_tokens,

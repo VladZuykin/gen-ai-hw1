@@ -1,0 +1,8 @@
+ID: spotify_review_33202
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 3/5 (neutral)
+Полезных: 70
+
+Текст отзыва:
+Its good at finding songs for you, sure. But theres so many bugs. Once it undownloaded all of my downloaded songs, thus creating the most boring aeroplane ride of my life. And I wasnt even in offline mode! All I did was turn my Wi-Fi off after they had all downloaded. I also just got kicked out and cant log back in because I was in offline mode prior to be kicked out. I dont know how Ill log back in now.

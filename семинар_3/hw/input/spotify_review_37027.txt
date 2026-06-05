@@ -1,0 +1,8 @@
+ID: spotify_review_37027
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 1/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+The app is buggy, not playing music while taking my subscription fees

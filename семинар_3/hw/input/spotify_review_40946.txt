@@ -1,0 +1,8 @@
+ID: spotify_review_40946
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 2/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+Playlist randomization is a joke. App sometimes freezes on my Huawei tablet. No support to cast own library

@@ -1,0 +1,8 @@
+ID: spotify_review_58648
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 2/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+I love spotify but, when ever I use the search button it shows a blank screen for 5 minutes and then closes the app

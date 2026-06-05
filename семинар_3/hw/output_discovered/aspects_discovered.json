@@ -1,0 +1,176 @@
+[
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "positive",
+        "quote": "not as many commercials"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "cannot even log in"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": []
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "songs dont play"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "problem is adverticement"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": []
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "some songs what is on YouTube arent on spotify"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "new shuffle music is Weird Next level irritating"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "annoyed that I get Ads on podcasts when I pay for premium service"
+      },
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "now playing function not working correctly ... telling me nothing is playing"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "performance",
+        "sentiment": "negative",
+        "quote": "removed song previews when you are choosing songs for a playlist"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "starts playing ads"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": []
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": []
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": []
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "ads",
+        "sentiment": "negative",
+        "quote": "Ads so many ads"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "got kicked out and cant log back in"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "play one second and then stop"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": []
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "Audio cutting out regularly"
+      },
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "play progress bar not showing up"
+      }
+    ]
+  },
+  {
+    "app_name": "Spotify",
+    "aspects": [
+      {
+        "aspect": "reliability",
+        "sentiment": "negative",
+        "quote": "want to access the current playing songpodcast, I have to kill the app and reopen"
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+ID: spotify_review_35983
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 1/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+songs no longer appear on the bottom as they are playing. i see lots of people are having this problem. what is happening?

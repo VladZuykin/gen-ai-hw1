@@ -1,0 +1,33 @@
+{
+  "headline": "Spotify praised for music selection but plagued by bugs, ads, and missing features.",
+  "key_findings": [
+    "Users love Spotify's music library and personalized playlists but are frustrated by frequent bugs and performance issues.",
+    "Excessive ads, even for premium users, are a major complaint across many reviews.",
+    "Playback problems such as songs stopping, wrong tracks playing, and shuffle glitches are commonly reported.",
+    "Missing or broken UI features like song previews, repeat playlist, and seek bar on Android Auto annoy users.",
+    "Login and offline mode issues cause inconvenience for some users.",
+    "Overall sentiment is mixed: positive for content, negative for stability and ad experience.",
+    "Many users threaten to cancel premium due to unresolved problems."
+  ],
+  "common_praise": [
+    "Great music selection and variety",
+    "Excellent personalized playlists",
+    "User-friendly interface",
+    "Useful notifications and lyrics",
+    "Good for meditation and listening"
+  ],
+  "common_criticism": [
+    "Too many ads",
+    "App crashes and freezes",
+    "Playback and shuffle issues",
+    "Missing or broken features",
+    "Login and offline problems"
+  ],
+  "recommendations": [
+    "Invest in app stability and fix crashes, freezes, and loading bugs.",
+    "Reduce ad frequency for free users and ensure premium users have an ad-free experience.",
+    "Improve playback reliability including shuffle algorithm and track selection.",
+    "Restore missing features like song previews, repeat playlist, and seek bar on Android Auto.",
+    "Enhance login and offline mode to prevent data usage and login errors."
+  ]
+}

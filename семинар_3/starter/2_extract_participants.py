@@ -35,8 +35,21 @@ def extract_participants(transcript: str) -> list[Participant]:
       • max_retries=3 — на случай, если первый ответ невалиден по схеме
       • temperature=0.0 для извлечения фактов (а не для генерации)
     """
-    # TODO
-    raise NotImplementedError
+    messages = [
+        {"role": "system", "content": IE_SYSTEM},
+        {"role": "user", "content": f"Проанализируй транскрипт и извлеки информацию об участниках:\n\n{transcript}"}
+    ]
+    
+    # Используем клиент с response_model
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=list[Participant],  # список участников
+        max_retries=3,
+        temperature=0.0  # для извлечения фактов нужна детерминированность
+    )
+    
+    return result
 
 
 def main() -> None:

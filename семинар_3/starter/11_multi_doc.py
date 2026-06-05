@@ -61,10 +61,27 @@ def list_transcripts(folder: str = "transcripts") -> list[Path]:
 def process_one(path: Path) -> dict:
     """Один транскрипт → {bank, aspects, summary}."""
     transcript = path.read_text(encoding="utf-8")
-    bank = path.stem  # имя файла без расширения = идентификатор банка
-    # TODO: вызвать extract_aspects + summarize_discussion;
-    #       вернуть словарь.
-    raise NotImplementedError
+    bank = path.stem
+    
+    print(f"  Обработка: {bank}...")
+    
+    # Извлекаем аспекты
+    aspects = extract_aspects(transcript)
+    
+    # Создаём резюме дискуссии
+    summary = summarize_discussion(transcript)
+    
+    # summary уже должен быть DiscussionSummary, но на всякий случай
+    if hasattr(summary, 'model_dump'):
+        summary_dict = summary.model_dump()
+    else:
+        summary_dict = summary
+    
+    return {
+        "bank": bank,
+        "aspects": [p.model_dump() if hasattr(p, 'model_dump') else p for p in aspects],
+        "summary": summary_dict
+    }
 
 
 def aggregate_aspects(docs: list[dict]) -> pd.DataFrame:
@@ -72,20 +89,31 @@ def aggregate_aspects(docs: list[dict]) -> pd.DataFrame:
 
     Колонки: bank, name, aspect, sentiment, confidence, quote.
     """
-    # TODO
-    raise NotImplementedError
+    rows = []
+    for doc in docs:
+        bank = doc["bank"]
+        for participant in doc["aspects"]:
+            name = participant.get("name", "unknown")
+            for aspect in participant.get("aspects", []):
+                rows.append({
+                    "bank": bank,
+                    "name": name,
+                    "aspect": aspect.get("aspect", ""),
+                    "sentiment": aspect.get("sentiment", ""),
+                    "quote": aspect.get("quote", "")[:100]  # обрезаем для читаемости
+                })
+    
+    return pd.DataFrame(rows)
 
 
 def top_topics(df: pd.DataFrame, n: int = 10) -> pd.Series:
     """Топ-N аспектов по частоте появления (counts)."""
-    # TODO: df['aspect'].value_counts().head(n)
-    raise NotImplementedError
+    return df['aspect'].value_counts().head(n)
 
 
 def cross_bank_table(df: pd.DataFrame) -> pd.DataFrame:
     """Сводная таблица: строки — банки, столбцы — аспекты, значения — счётчик."""
-    # TODO: pd.crosstab(df['bank'], df['aspect'])
-    raise NotImplementedError
+    return pd.crosstab(df['bank'], df['aspect'])
 
 
 def consolidate(
@@ -96,8 +124,37 @@ def consolidate(
     В промпте указать: «выдели общие паттерны (что встречается у всех)
     и уникальные точки боли каждого банка».
     """
-    # TODO
-    raise NotImplementedError
+    # Формируем текстовое представление всех сводок
+    summaries_text = []
+    for bank, summary_dict in zip(banks, summaries):
+        summaries_text.append(f"## Банк: {bank}")
+        summaries_text.append(f"Заголовок: {summary_dict.get('headline', 'Нет заголовка')}")
+        summaries_text.append(f"Ключевые выводы:")
+        for kf in summary_dict.get('key_findings', []):
+            summaries_text.append(f"  • {kf}")
+        summaries_text.append(f"Рекомендации:")
+        for ai in summary_dict.get('action_items', []):
+            summaries_text.append(f"  → {ai}")
+        summaries_text.append("")
+    
+    combined = "\n".join(summaries_text)
+    
+    print(f"\n  Отправляем судье {len(summaries)} сводок...")
+    
+    messages = [
+        {"role": "system", "content": MULTI_DOC_SYSTEM},
+        {"role": "user", "content": f"Проанализируй сводки по разным банкам и выдели общие паттерны и уникальные особенности:\n\n{combined}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=MultiDocSummary,
+        max_retries=3,
+        temperature=0.0
+    )
+    
+    return result
 
 
 def main() -> None:

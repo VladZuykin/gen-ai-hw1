@@ -1,0 +1,602 @@
+[
+  {
+    "name": "Елена Иванова",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Тверской"
+    },
+    "income_rub": 100000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Екатерина Смирнова",
+    "age": 30,
+    "address": {
+      "city": "Москва",
+      "district": "Тверской"
+    },
+    "income_rub": 150000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Ольга Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Невский"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Анна Соколова",
+    "age": 32,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 180000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Екатерина Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Приморский"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Екатерина Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Московский"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Морозова",
+    "age": 35,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Анна Соколова",
+    "age": 32,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 180000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Елена Смирнова",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Арбат"
+    },
+    "income_rub": 120000,
+    "occupation": "учитель",
+    "shopping_frequency": "иногда",
+    "preferred_category": "книги"
+  },
+  {
+    "name": "Елена Васильева",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Екатерина Смирнова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Невский"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Екатерина Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Петроградский"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Иванова",
+    "age": 41,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Верх-Исетский"
+    },
+    "income_rub": 65000,
+    "occupation": "учитель",
+    "shopping_frequency": "иногда",
+    "preferred_category": "книги"
+  },
+  {
+    "name": "Екатерина Иванова",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Арбат"
+    },
+    "income_rub": 150000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Елена Иванова",
+    "age": 30,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Василеостровский"
+    },
+    "income_rub": 150000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Мария Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Невский"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Иван Сидоров",
+    "age": 40,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Верх-Исетский"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Максим Иванов",
+    "age": 30,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 150000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Екатерина Иванова",
+    "age": 29,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Невский"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Дмитрий Сидоров",
+    "age": 45,
+    "address": {
+      "city": "Москва",
+      "district": "Хамовники"
+    },
+    "income_rub": 150000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Алексей Иванов",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Мария Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Елена Морозова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Приморский"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Смирнова",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Алексей Иванов",
+    "age": 40,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Максим Орлов",
+    "age": 28,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "предприниматель",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Мария Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Воробьева",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Приморский"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Анна Соколова",
+    "age": 32,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 180000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Елена Васильева",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "иногда",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Анна Соколова",
+    "age": 32,
+    "address": {
+      "city": "Москва",
+      "district": "Тверской"
+    },
+    "income_rub": 180000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Анна Соколова",
+    "age": 30,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 150000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Иван",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Тверской"
+    },
+    "income_rub": 150000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Анна Соколова",
+    "age": 32,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 180000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Елена",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Екатерина Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Приморский"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Михаил Орлов",
+    "age": 45,
+    "address": {
+      "city": "Екатеринбург",
+      "district": "Академический"
+    },
+    "income_rub": 150000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "иногда",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Василеостровский"
+    },
+    "income_rub": 120000,
+    "occupation": "учитель",
+    "shopping_frequency": "часто",
+    "preferred_category": "книги"
+  },
+  {
+    "name": "Елена Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Василеостровский"
+    },
+    "income_rub": 110000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Мария Иванова",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 150000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Елена",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "одежда"
+  },
+  {
+    "name": "Иван Петров",
+    "age": 34,
+    "address": {
+      "city": "Москва",
+      "district": "Тверской"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Елена Смирнова",
+    "age": 35,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "учитель",
+    "shopping_frequency": "иногда",
+    "preferred_category": "книги"
+  },
+  {
+    "name": "Иван Смирнов",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Мария Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "менеджер",
+    "shopping_frequency": "часто",
+    "preferred_category": "косметика"
+  },
+  {
+    "name": "Екатерина Иванова",
+    "age": 28,
+    "address": {
+      "city": "Москва",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  },
+  {
+    "name": "Мария Иванова",
+    "age": 28,
+    "address": {
+      "city": "Санкт-Петербург",
+      "district": "Центральный"
+    },
+    "income_rub": 120000,
+    "occupation": "IT-специалист",
+    "shopping_frequency": "часто",
+    "preferred_category": "электроника"
+  }
+]

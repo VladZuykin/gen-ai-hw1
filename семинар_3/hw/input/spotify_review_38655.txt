@@ -1,0 +1,8 @@
+ID: spotify_review_38655
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 3/5 (neutral)
+Полезных: 0
+
+Текст отзыва:
+Long load time if you have many downloaded songs 5k for me. Most recent update causes the music control bar to disappear until the app is relaunched. Android 12 OneUI 4 Galaxy S10

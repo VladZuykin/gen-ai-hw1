@@ -1,0 +1,8 @@
+ID: spotify_review_37945
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 1/5 (negative)
+Полезных: 1
+
+Текст отзыва:
+Have to keep resetting the app because it wont let me see the song playing. Buggy as hell.

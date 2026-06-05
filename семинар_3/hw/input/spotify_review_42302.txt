@@ -1,0 +1,8 @@
+ID: spotify_review_42302
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 2/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+Tracks constantly stop playing. Have set all streaming settings to the minimum and enabled the app to run in the background. Still happens. Canceling premium membership today. If not for the consistent broken song lays I would keep the app.

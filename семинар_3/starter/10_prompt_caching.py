@@ -51,8 +51,37 @@ def run_once(system_prompt: str, transcript: str) -> dict:
     completion.usage.prompt_cache_hit_tokens / prompt_cache_miss_tokens
     (специфика DeepSeek).
     """
-    # TODO
-    raise NotImplementedError
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": f"Проанализируй транскрипт:\n\n{transcript}"}
+    ]
+    
+    t0 = time.time()
+    
+    # with_completion=True возвращает (response_model, completion)
+    result, completion = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=list[ParticipantSentiment],
+        max_retries=1,
+        temperature=0.0,
+        with_completion=True
+    )
+    
+    elapsed = time.time() - t0
+    
+    # Извлекаем usage (специфика DeepSeek)
+    usage = completion.usage
+    usage_dict = {
+        "time": elapsed,
+        "prompt_tokens": usage.prompt_tokens,
+        "completion_tokens": usage.completion_tokens,
+        "total_tokens": usage.total_tokens,
+        "cache_hit": getattr(usage, "prompt_cache_hit_tokens", 0),
+        "cache_miss": getattr(usage, "prompt_cache_miss_tokens", usage.prompt_tokens),
+    }
+    
+    return usage_dict
 
 
 def show(label: str, info: dict) -> None:

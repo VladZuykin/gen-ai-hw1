@@ -1,0 +1,8 @@
+ID: spotify_review_33441
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 2/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+When connected to a Bluetooth speaker, it will play one second and then stop.

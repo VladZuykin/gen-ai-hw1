@@ -1,0 +1,452 @@
+[
+  {
+    "id": "spotify_review_12203",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 57,
+    "thumbsup": 0,
+    "file": "spotify_review_12203.txt"
+  },
+  {
+    "id": "spotify_review_316",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 69,
+    "thumbsup": 0,
+    "file": "spotify_review_316.txt"
+  },
+  {
+    "id": "spotify_review_35983",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 122,
+    "thumbsup": 0,
+    "file": "spotify_review_35983.txt"
+  },
+  {
+    "id": "spotify_review_7359",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 57,
+    "thumbsup": 0,
+    "file": "spotify_review_7359.txt"
+  },
+  {
+    "id": "spotify_review_37027",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 69,
+    "thumbsup": 0,
+    "file": "spotify_review_37027.txt"
+  },
+  {
+    "id": "spotify_review_50356",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 202,
+    "thumbsup": 0,
+    "file": "spotify_review_50356.txt"
+  },
+  {
+    "id": "spotify_review_5346",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 134,
+    "thumbsup": 0,
+    "file": "spotify_review_5346.txt"
+  },
+  {
+    "id": "spotify_review_19409",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 54,
+    "thumbsup": 0,
+    "file": "spotify_review_19409.txt"
+  },
+  {
+    "id": "spotify_review_35390",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 387,
+    "thumbsup": 16,
+    "file": "spotify_review_35390.txt"
+  },
+  {
+    "id": "spotify_review_37945",
+    "app": "Spotify",
+    "rating": 1,
+    "sentiment": "negative",
+    "text_length": 90,
+    "thumbsup": 1,
+    "file": "spotify_review_37945.txt"
+  },
+  {
+    "id": "spotify_review_42302",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 240,
+    "thumbsup": 0,
+    "file": "spotify_review_42302.txt"
+  },
+  {
+    "id": "spotify_review_38027",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 447,
+    "thumbsup": 0,
+    "file": "spotify_review_38027.txt"
+  },
+  {
+    "id": "spotify_review_38330",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 117,
+    "thumbsup": 2,
+    "file": "spotify_review_38330.txt"
+  },
+  {
+    "id": "spotify_review_40946",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 107,
+    "thumbsup": 0,
+    "file": "spotify_review_40946.txt"
+  },
+  {
+    "id": "spotify_review_35349",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 205,
+    "thumbsup": 0,
+    "file": "spotify_review_35349.txt"
+  },
+  {
+    "id": "spotify_review_39580",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 132,
+    "thumbsup": 0,
+    "file": "spotify_review_39580.txt"
+  },
+  {
+    "id": "spotify_review_44634",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 481,
+    "thumbsup": 106,
+    "file": "spotify_review_44634.txt"
+  },
+  {
+    "id": "spotify_review_3198",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 41,
+    "thumbsup": 0,
+    "file": "spotify_review_3198.txt"
+  },
+  {
+    "id": "spotify_review_58648",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 115,
+    "thumbsup": 0,
+    "file": "spotify_review_58648.txt"
+  },
+  {
+    "id": "spotify_review_33441",
+    "app": "Spotify",
+    "rating": 2,
+    "sentiment": "negative",
+    "text_length": 77,
+    "thumbsup": 0,
+    "file": "spotify_review_33441.txt"
+  },
+  {
+    "id": "spotify_review_6660",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 185,
+    "thumbsup": 0,
+    "file": "spotify_review_6660.txt"
+  },
+  {
+    "id": "spotify_review_54507",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 75,
+    "thumbsup": 0,
+    "file": "spotify_review_54507.txt"
+  },
+  {
+    "id": "spotify_review_33671",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 182,
+    "thumbsup": 0,
+    "file": "spotify_review_33671.txt"
+  },
+  {
+    "id": "spotify_review_38655",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 179,
+    "thumbsup": 0,
+    "file": "spotify_review_38655.txt"
+  },
+  {
+    "id": "spotify_review_49909",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 329,
+    "thumbsup": 5,
+    "file": "spotify_review_49909.txt"
+  },
+  {
+    "id": "spotify_review_33202",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 407,
+    "thumbsup": 70,
+    "file": "spotify_review_33202.txt"
+  },
+  {
+    "id": "spotify_review_53056",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 79,
+    "thumbsup": 0,
+    "file": "spotify_review_53056.txt"
+  },
+  {
+    "id": "spotify_review_13274",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 107,
+    "thumbsup": 0,
+    "file": "spotify_review_13274.txt"
+  },
+  {
+    "id": "spotify_review_58657",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 155,
+    "thumbsup": 0,
+    "file": "spotify_review_58657.txt"
+  },
+  {
+    "id": "spotify_review_31361",
+    "app": "Spotify",
+    "rating": 3,
+    "sentiment": "neutral",
+    "text_length": 139,
+    "thumbsup": 0,
+    "file": "spotify_review_31361.txt"
+  },
+  {
+    "id": "spotify_review_8525",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 38,
+    "thumbsup": 0,
+    "file": "spotify_review_8525.txt"
+  },
+  {
+    "id": "spotify_review_32969",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 182,
+    "thumbsup": 0,
+    "file": "spotify_review_32969.txt"
+  },
+  {
+    "id": "spotify_review_16232",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 57,
+    "thumbsup": 0,
+    "file": "spotify_review_16232.txt"
+  },
+  {
+    "id": "spotify_review_12487",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 62,
+    "thumbsup": 0,
+    "file": "spotify_review_12487.txt"
+  },
+  {
+    "id": "spotify_review_51175",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 94,
+    "thumbsup": 0,
+    "file": "spotify_review_51175.txt"
+  },
+  {
+    "id": "spotify_review_49910",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 195,
+    "thumbsup": 1,
+    "file": "spotify_review_49910.txt"
+  },
+  {
+    "id": "spotify_review_48225",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 44,
+    "thumbsup": 2,
+    "file": "spotify_review_48225.txt"
+  },
+  {
+    "id": "spotify_review_20365",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 476,
+    "thumbsup": 27,
+    "file": "spotify_review_20365.txt"
+  },
+  {
+    "id": "spotify_review_14272",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 90,
+    "thumbsup": 0,
+    "file": "spotify_review_14272.txt"
+  },
+  {
+    "id": "spotify_review_24960",
+    "app": "Spotify",
+    "rating": 4,
+    "sentiment": "positive",
+    "text_length": 293,
+    "thumbsup": 0,
+    "file": "spotify_review_24960.txt"
+  },
+  {
+    "id": "spotify_review_7574",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 134,
+    "thumbsup": 0,
+    "file": "spotify_review_7574.txt"
+  },
+  {
+    "id": "spotify_review_53317",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 120,
+    "thumbsup": 0,
+    "file": "spotify_review_53317.txt"
+  },
+  {
+    "id": "spotify_review_55046",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 57,
+    "thumbsup": 0,
+    "file": "spotify_review_55046.txt"
+  },
+  {
+    "id": "spotify_review_32983",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 33,
+    "thumbsup": 0,
+    "file": "spotify_review_32983.txt"
+  },
+  {
+    "id": "spotify_review_652",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 114,
+    "thumbsup": 0,
+    "file": "spotify_review_652.txt"
+  },
+  {
+    "id": "spotify_review_57876",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 138,
+    "thumbsup": 3,
+    "file": "spotify_review_57876.txt"
+  },
+  {
+    "id": "spotify_review_12038",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 35,
+    "thumbsup": 0,
+    "file": "spotify_review_12038.txt"
+  },
+  {
+    "id": "spotify_review_48453",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 129,
+    "thumbsup": 0,
+    "file": "spotify_review_48453.txt"
+  },
+  {
+    "id": "spotify_review_9685",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 69,
+    "thumbsup": 0,
+    "file": "spotify_review_9685.txt"
+  },
+  {
+    "id": "spotify_review_15580",
+    "app": "Spotify",
+    "rating": 5,
+    "sentiment": "positive",
+    "text_length": 139,
+    "thumbsup": 2,
+    "file": "spotify_review_15580.txt"
+  }
+]

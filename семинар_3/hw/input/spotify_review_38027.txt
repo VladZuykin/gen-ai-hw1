@@ -1,0 +1,8 @@
+ID: spotify_review_38027
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 2/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+I have no idea what has happened to this app but the past week my music keeps stopping, the song infocontrol dissapears, I keep getting logged out and then error messages when trying to log in. I cleared the cache and app data multiple times, no one else has access to my account and Ive checked. This is very disruptive to me as I use this app maybe 4-5 hours a day, and I have used Spotify since it began. PLEASE FIX THIS OTHERS HAVE SAME ISSUES

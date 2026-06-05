@@ -1,0 +1,8 @@
+ID: spotify_review_35390
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 1/5 (negative)
+Полезных: 16
+
+Текст отзыва:
+The last update is too buggy. Every time I want to access the current playing songpodcast, I have to kill the app and reopen. Also, the apps sometimes dies in the middle of playing. It is a paid service and we expect more reliability. Also, you could have just rolled back to the tag of the previous version with a higher version code until you fix it. The app is such a pain to use now.

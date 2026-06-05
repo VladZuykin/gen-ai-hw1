@@ -19,6 +19,7 @@
 from __future__ import annotations
 
 import importlib
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -36,8 +37,27 @@ MODEL = get_model()
 
 def summarize_chunk(chunk: str) -> ChunkSummary:
     """MAP: один фрагмент → ChunkSummary."""
-    # TODO
-    raise NotImplementedError
+    speaker_match = re.match(r'^(Анна|Игорь|Дарья|Сергей):', chunk.strip())
+    speaker = speaker_match.group(1) if speaker_match else "Неизвестный"
+    
+    messages = [
+        {"role": "system", "content": CHUNK_SYSTEM},
+        {"role": "user", "content": f"Проанализируй высказывания этого участника:\n\n{chunk}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=ChunkSummary,
+        max_retries=3,
+        temperature=0.0
+    )
+    
+    # Убеждаемся, что speaker установлен
+    if result.speaker == "unknown":
+        result.speaker = speaker
+    
+    return result
 
 
 def reduce_summaries(summaries: list[ChunkSummary]) -> DiscussionSummary:
@@ -46,8 +66,30 @@ def reduce_summaries(summaries: list[ChunkSummary]) -> DiscussionSummary:
     Склей summaries в строку (по одному блоку на фрагмент), отправь
     одним сообщением с response_model=DiscussionSummary.
     """
-    # TODO
-    raise NotImplementedError
+    # Склеиваем все мини-резюме в один текст
+    summaries_text = []
+    for i, s in enumerate(summaries, 1):
+        summaries_text.append(f"## Участник {i} ({s.speaker})")
+        summaries_text.append(f"Ключевые тезисы: {', '.join(s.key_points)}")
+        summaries_text.append(f"Тональность: {s.sentiment}")
+        summaries_text.append("")
+    
+    combined = "\n".join(summaries_text)
+    
+    messages = [
+        {"role": "system", "content": REDUCE_SYSTEM},
+        {"role": "user", "content": f"Создай единый свод на основе этих мини-резюме:\n\n{combined}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=DiscussionSummary,
+        max_retries=3,
+        temperature=0.0
+    )
+    
+    return result
 
 
 def summarize_discussion(transcript: str, workers: int = 6) -> DiscussionSummary:

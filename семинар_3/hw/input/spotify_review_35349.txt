@@ -1,0 +1,8 @@
+ID: spotify_review_35349
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 2/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+I havr generally liked the app, but this last update has been extremely buggy. Audio cutting out regularly, the play progress bar not showing up. I keep having to close the whole app just to pause music...

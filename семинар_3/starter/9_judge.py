@@ -59,15 +59,41 @@ def build_evidence_packet(participants: list[dict], summary: dict) -> str:
     «гипотезы» (summary — то, что мы из них вывели). Пусть проверит,
     что вторые опираются на первые.
     """
-    # TODO: собрать текстовый блок с разделами:
-    #   ## Рекомендации (которые оцениваем)
-    #   ## Жалобы участников (исходные данные)
-    raise NotImplementedError
+    # Форматируем жалобы участников
+    participants_text = "## Исходные жалобы участников (факты):\n\n"
+    for p in participants:
+        participants_text += f"### {p.get('name', 'Unknown')}\n"
+        for concern in p.get('concerns', []):
+            participants_text += f"- [{concern.get('category', '')}] {concern.get('text', '')}\n"
+            participants_text += f"  Цитата: «{concern.get('quote', '')}»\n"
+        participants_text += "\n"
+    
+    # Форматируем рекомендации из summary
+    summary_text = "## Рекомендации для проверки:\n\n"
+    for i, action in enumerate(summary.get('action_items', []), 1):
+        summary_text += f"{i}. {action}\n"
+    
+    return participants_text + "\n" + summary_text
 
 
 def judge(participants: list[dict], summary: dict) -> JudgeReport:
-    # TODO: один вызов с response_model=JudgeReport.
-    raise NotImplementedError
+    """Один вызов модели для оценки всех рекомендаций."""
+    evidence_packet = build_evidence_packet(participants, summary)
+    
+    messages = [
+        {"role": "system", "content": JUDGE_SYSTEM},
+        {"role": "user", "content": f"Проверь, насколько рекомендации соответствуют исходным жалобам:\n\n{evidence_packet}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=JudgeReport,
+        max_retries=3,
+        temperature=0.0
+    )
+    
+    return result
 
 
 def main() -> None:

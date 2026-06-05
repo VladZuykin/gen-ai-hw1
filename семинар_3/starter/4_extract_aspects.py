@@ -36,8 +36,21 @@ MODEL = get_model()
 
 
 def extract_aspects(transcript: str) -> list[ParticipantSentiment]:
-    # TODO: один запрос, response_model=list[ParticipantSentiment], max_retries=3
-    raise NotImplementedError
+    """Один запрос к модели → список оценок участников."""
+    messages = [
+        {"role": "system", "content": ASPECTS_SYSTEM},
+        {"role": "user", "content": f"Проанализируй транскрипт и оцени каждого участника по аспектам:\n\n{transcript}"}
+    ]
+    
+    result = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        response_model=list[ParticipantSentiment],
+        max_retries=3,
+        temperature=0.0
+    )
+    
+    return result
 
 
 def check_quotes(
@@ -49,8 +62,46 @@ def check_quotes(
     Не пытайся искать дословно: модель может слегка переформулировать.
     Бери первые 30 символов цитаты в lowercase и ищи подстроку.
     """
-    # TODO
-    raise NotImplementedError
+    ghosts = []
+    transcript_lower = transcript.lower()
+    
+    for p in aspects:
+        for asp in p.aspects:
+            quote = asp.quote
+            if not quote:
+                continue
+            
+            quote_clean = quote.strip()
+            found = False
+            
+            # Стратегия 1: точное вхождение (без учёта регистра)
+            if quote_clean.lower() in transcript_lower:
+                found = True
+            
+            # Стратегия 2: первые 50 символов (убирая кавычки)
+            if not found:
+                quote_stripped = quote_clean.strip('"\'«»')
+                if len(quote_stripped) > 20:
+                    prefix = quote_stripped[:50].lower()
+                    if prefix in transcript_lower:
+                        found = True
+            
+            # Стратегия 3: ключевые слова (70% совпадения)
+            if not found:
+                words = set(w.lower() for w in quote_clean.split() if len(w) > 3)
+                if words:
+                    found_words = 0
+                    for word in words:
+                        if word in transcript_lower:
+                            found_words += 1
+                    
+                    if found_words / len(words) > 0.7:
+                        found = True
+            
+            if not found:
+                ghosts.append((p.name, quote_clean[:80]))
+    
+    return ghosts
 
 
 def build_heatmap(
@@ -58,8 +109,44 @@ def build_heatmap(
     out_path: str = "heatmap.png",
 ) -> None:
     """Матрица participant × aspect, sentiment → {+1, 0, -1}, NaN если не упомянут."""
-    # TODO: построить numpy-матрицу + seaborn.heatmap (cmap="RdYlGn", center=0).
-    raise NotImplementedError
+    sentiment_map = {
+        "positive": 1,
+        "neutral": 0,
+        "negative": -1
+    }
+    
+    # Список всех участников и аспектов
+    participants = [p.name for p in aspects]
+    all_aspects = ["price", "speed", "ux", "support", "security"]
+    
+    # Создаём матрицу
+    matrix = np.full((len(participants), len(all_aspects)), np.nan)
+    
+    # Заполняем матрицу
+    for i, p in enumerate(aspects):
+        for asp in p.aspects:
+            if asp.aspect in all_aspects:
+                j = all_aspects.index(asp.aspect)
+                matrix[i, j] = sentiment_map.get(asp.sentiment, 0)
+    
+    # Рисуем тепловую карту
+    plt.figure(figsize=(10, 6))
+    sns.heatmap(
+        matrix,
+        xticklabels=all_aspects,
+        yticklabels=participants,
+        annot=True,
+        fmt='.0f',
+        cmap="RdYlGn",
+        center=0,
+        cbar_kws={'label': 'Sentiment (positive=1, neutral=0, negative=-1)'}
+    )
+    plt.title("Аспектный анализ: тональность по участникам")
+    plt.tight_layout()
+    plt.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close()
+    
+    print(f"  Тепловая карта сохранена: {out_path}")
 
 
 def main() -> None:

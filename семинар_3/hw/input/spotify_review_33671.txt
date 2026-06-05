@@ -1,0 +1,8 @@
+ID: spotify_review_33671
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 3/5 (neutral)
+Полезных: 0
+
+Текст отзыва:
+Cannot use microphone to find songs constant loading not easy to find just albums when looking up artists it always gives you a playlist of greatest hits when you just want an album.

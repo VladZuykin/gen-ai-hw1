@@ -1,0 +1,8 @@
+ID: spotify_review_3198
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 2/5 (negative)
+Полезных: 0
+
+Текст отзыва:
+Downloaded the app but it is not opening.

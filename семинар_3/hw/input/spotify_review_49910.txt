@@ -1,0 +1,8 @@
+ID: spotify_review_49910
+Приложение: Spotify
+Пользователь: Anonymous
+Оценка: 4/5 (positive)
+Полезных: 1
+
+Текст отзыва:
+There is a glitch in the scrolling within the liked songs list. I cant scroll with the bar or the genre bar within liked songs so Im forced to flick through thousands of songs. Please fix spotify
