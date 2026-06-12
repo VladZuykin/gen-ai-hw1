@@ -1,8 +1,6 @@
 """
 Pydantic-схема ответа RAG.
 
-TODO (Блок 3 семинара): заполните поля RAGAnswer.
-Сейчас схема пустая — модель возвращает строку, и это как раз проблема.
 """
 
 from pydantic import BaseModel, Field
