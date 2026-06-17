@@ -124,4 +124,34 @@ TOOL_SCHEMAS = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "compare_periods",
+            "description": (
+                "Сравнить значение макро-показателя в двух периодах. "
+                "Возвращает значения, дельту (разницу) и отношение (во сколько раз). "
+                "Используй этот инструмент когда вопрос про сравнение одного показателя в разные даты."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "metric": {
+                        "type": "string",
+                        "enum": ["key_rate", "fx_USD", "fx_EUR", "fx_CNY", "cpi", "unemployment"],
+                        "description": "Какой показатель сравнить: key_rate (ставка), fx_* (курс), cpi (инфляция), unemployment (безработица)"
+                    },
+                    "period_a": {
+                        "type": "string",
+                        "description": "Первый период. Формат: YYYY-MM-DD для курсов и ставки, YYYY-MM для инфляции и безработицы"
+                    },
+                    "period_b": {
+                        "type": "string",
+                        "description": "Второй период. Тот же формат что и period_a"
+                    }
+                },
+                "required": ["metric", "period_a", "period_b"]
+            }
+        }
+    }
 ]

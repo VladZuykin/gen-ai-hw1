@@ -289,3 +289,121 @@ def calculate(expression: str) -> dict:
         return {"expression": expression, "result": round(val, 6)}
     except Exception as e:
         return {"error": f"{type(e).__name__}: {e}"}
+
+
+# ===========================================================================
+# 5. Сравнение периодов
+# ===========================================================================
+
+def compare_periods(
+    metric: str,               # "key_rate" | "fx_USD" | "fx_EUR" | "fx_CNY" | "cpi" | "unemployment"
+    period_a: str,             # "YYYY-MM" или "YYYY-MM-DD"
+    period_b: str,
+) -> dict:
+    """
+    Сравнить значение метрики в двух периодах.
+    Возвращает:
+      {"metric": ..., "a": {"date": ..., "value": ...},
+       "b": {"date": ..., "value": ...},
+       "delta": b.value - a.value,
+       "ratio": b.value / a.value,
+       "source": "..."}
+    """
+    
+    def _get_value_for_period(metric: str, period: str) -> dict:
+        """Получить значение метрики за указанный период"""
+        parts = period.split("-")
+        
+        # Определяем тип метрики и формат периода
+        if metric.startswith("fx_"):
+            # Курс валюты: нужна полная дата YYYY-MM-DD
+            if len(parts) != 3:
+                return {"error": f"Для курса валют нужен формат YYYY-MM-DD, получено: {period}"}
+            currency = metric.split("_")[1]
+            return get_fx_rate(currency, period)
+            
+        elif metric == "key_rate":
+            # Ключевая ставка: нужна полная дата YYYY-MM-DD
+            if len(parts) != 3:
+                return {"error": f"Для ключевой ставки нужен формат YYYY-MM-DD, получено: {period}"}
+            return get_key_rate(period)
+            
+        elif metric == "cpi":
+            # Инфляция: нужен формат YYYY-MM
+            if len(parts) != 2:
+                return {"error": f"Для инфляции нужен формат YYYY-MM, получено: {period}"}
+            year, month = int(parts[0]), int(parts[1])
+            return get_inflation(year, month)
+            
+        elif metric == "unemployment":
+            # Безработица: нужен формат YYYY-MM
+            if len(parts) != 2:
+                return {"error": f"Для безработицы нужен формат YYYY-MM, получено: {period}"}
+            year, month = int(parts[0]), int(parts[1])
+            return get_unemployment(year, month)
+            
+        else:
+            return {"error": f"Неизвестная метрика: {metric}"}
+    
+    # Получаем значения для обоих периодов
+    val_a = _get_value_for_period(metric, period_a)
+    if "error" in val_a:
+        return {"error": f"Ошибка получения данных для периода A ({period_a}): {val_a['error']}"}
+    
+    val_b = _get_value_for_period(metric, period_b)
+    if "error" in val_b:
+        return {"error": f"Ошибка получения данных для периода B ({period_b}): {val_b['error']}"}
+    
+    # Извлекаем числовое значение из ответа инструмента
+    def _extract_value(data: dict) -> float:
+        """Извлечь числовое значение из словаря с данными"""
+        # Пробуем разные ключи в порядке приоритета
+        for key in ["rate", "cpi_yoy", "unemployment"]:
+            if key in data:
+                value = data[key]
+                if isinstance(value, (int, float)):
+                    return float(value)
+        # Если не нашли, пробуем найти любое число в значениях
+        for key, value in data.items():
+            if isinstance(value, (int, float)) and key not in ["year", "month", "delta", "ratio"]:
+                return float(value)
+        raise ValueError(f"Не удалось извлечь числовое значение из: {data}")
+    
+    try:
+        value_a = _extract_value(val_a)
+        value_b = _extract_value(val_b)
+    except ValueError as e:
+        return {"error": str(e)}
+    
+    # Определяем источник данных
+    source_a = val_a.get("source", "unknown")
+    source_b = val_b.get("source", "unknown")
+    source = source_a if source_a == source_b else "mixed"
+    
+    # Вычисляем дельту и отношение
+    delta = value_b - value_a
+    ratio = value_b / value_a if value_a != 0 else None
+    
+    # Формируем даты для ответа
+    date_a = val_a.get("date") or val_a.get("valid_from") or period_a
+    date_b = val_b.get("date") or val_b.get("valid_from") or period_b
+    
+    return {
+        "metric": metric,
+        "a": {
+            "date": date_a,
+            "value": round(value_a, 6)
+        },
+        "b": {
+            "date": date_b,
+            "value": round(value_b, 6)
+        },
+        "delta": round(delta, 6),
+        "ratio": round(ratio, 6) if ratio is not None else None,
+        "source": source,
+        # Добавляем дополнительную информацию для отладки (опционально)
+        "_debug": {
+            "raw_a": val_a,
+            "raw_b": val_b
+        } if source == "mixed" else {}
+    }
