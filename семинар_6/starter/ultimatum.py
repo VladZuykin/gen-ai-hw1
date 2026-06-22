@@ -60,10 +60,6 @@ def propose(round_num: int, history: list[dict]) -> ProposerMove:
         or "  (первый раунд)"
     )
 
-    # TODO (блок 7.1): вызови make_client().chat.completions.create(...) с
-    #   response_model=ProposerMove, system=PROPOSER_SYSTEM, user=текст с раундом
-    #   и историей `past`, temperature=0.7. Верни результат.
-    #   Сейчас заглушка — всегда поровну:
     return client.chat.completions.create(
         model=get_model(),
         messages=[
@@ -80,10 +76,6 @@ def propose(round_num: int, history: list[dict]) -> ProposerMove:
 
 
 def respond(share: int) -> ResponderMove:
-    # TODO (блок 7.2): вызови make_client().chat.completions.create(...) с
-    #   response_model=ResponderMove, system=RESPONDER_SYSTEM, user=«предлагают {share}
-    #   из 100, принять?», temperature=0.7. Верни результат.
-    #   Сейчас заглушка — соглашается на всё (нет нормы справедливости):
     client = make_client()
     return client.chat.completions.create(
         model=get_model(),

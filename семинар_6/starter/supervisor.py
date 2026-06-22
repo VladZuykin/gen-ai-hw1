@@ -57,8 +57,8 @@ SUPERVISOR_SYSTEM = """\
 - Если не хватает какого-то числа — action="ask": ОДИН узкий подвопрос + expected_tools.
 - Если всех чисел достаточно — action="finish" и заполни answer (число + единица).
 - Не повторяй уже заданные подвопросы.
+- Любую арифметику (разности, отношения, проценты) делает Исполнитель через calculate отдельным подвопросом — сам в уме не считай.
 """
-# - Любую арифметику (разности, отношения, проценты) делает Исполнитель через calculate отдельным подвопросом — сам в уме не считай.
 
 
 def supervisor_step(
@@ -98,16 +98,7 @@ def run_supervisor(
     for step in range(1, max_steps + 1):
         act = supervisor_step(question, answers)
         trace.append({"step": step, "action": act.action, "question": act.question})
-
-        # TODO (блок 6.2): обработай решение супервизора.
-        #   act.action == "finish" → верни {"answer": act.answer, "answers": answers,
-        #                                    "trace": trace, "steps": step}
-        #   act.action == "ask"    → собери SubQuestion(id=step, question=act.question,
-        #                            expected_tools=act.expected_tools or ["calculate"],
-        #                            depends_on=list(answers))  ← все прошлые ответы,
-        #                            вызови worker(sq, prev_answers=answers),
-        #                            положи в answers[step] и продолжи цикл.
-        # Сейчас заглушка — сразу выходим, ничего не делая:
+        
         if act.action == "finish":
             if verbose:
                 print(f"[{step}] finish: {act.answer}")

@@ -18,21 +18,56 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from critic import critic
 from llm_client import get_model, make_raw_client
 from planner import planner
 from schemas_pwc import Plan, SubQuestion, WorkerAnswer
+from validator import validate_plan
 from worker import worker
+
+def execute_level_parallel(
+    level: list[SubQuestion],
+    prev_answers: dict[int, WorkerAnswer],
+    max_workers: int = 4,
+    verbose: bool = False,
+) -> dict[int, WorkerAnswer]:
+    """Прогнать все подвопросы уровня параллельно."""
+    results: dict[int, WorkerAnswer] = {}
+    
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {}
+        for sq in level:
+            future = executor.submit(worker, sq, prev_answers)
+            futures[future] = sq.id
+        
+        for future in as_completed(futures):
+            sq_id = futures[future]
+            try:
+                ans = future.result()
+                results[sq_id] = ans
+                if verbose:
+                    print(f"  [{sq_id}] ✓ {ans.answer[:60]}...")
+            except Exception as e:
+                results[sq_id] = WorkerAnswer(
+                    subquestion_id=sq_id,
+                    question_snippet="(ошибка)",
+                    answer=f"(ошибка: {type(e).__name__}: {e})",
+                    used_tools=[],
+                    raw_trace=[],
+                )
+                if verbose:
+                    print(f"  [{sq_id}] ❌ {e}")
+    
+    return results
 
 
 def _topological_sort(subqs: list[SubQuestion]) -> list[SubQuestion]:
     """Отсортировать подвопросы так, чтобы depends_on шли раньше."""
-    # TODO (блок 3.1): реализовать топологическую сортировку.
-    # Подсказка: DFS с пометкой посещённых. Если видим повторный заход в
-    # узел через текущий путь — это цикл, подними ValueError.
-    # Если ссылка на id, которого нет в списке, — тихо пропускай.
+
     by_id = {s.id: s for s in subqs}
     ordered: list[SubQuestion] = []
     visited: set[int] = set()
@@ -41,7 +76,7 @@ def _topological_sort(subqs: list[SubQuestion]) -> list[SubQuestion]:
         if node_id in visited:
             return None
         if node_id in path:
-            raise ValueError(f"Цикл в depends_on : {path + node[ids]}")
+            raise ValueError(f"Цикл в depends_on : {path + [node_id]}")
         if node_id not in by_id:
             return None
         for dep in by_id[node_id].depends_on:
@@ -53,6 +88,35 @@ def _topological_sort(subqs: list[SubQuestion]) -> list[SubQuestion]:
         visit(sq.id, [])
     return ordered
 
+def _topological_levels(subqs: list[SubQuestion]) -> list[list[SubQuestion]]:
+    """Разбить подвопросы на уровни для параллельного исполнения."""
+    by_id = {s.id: s for s in subqs}
+    
+    # Проверка на циклы
+    try:
+        _topological_sort(subqs)
+    except ValueError as e:
+        raise ValueError(f"Цикл в depends_on: {e}")
+    
+    levels = []
+    unassigned_ids = set(s.id for s in subqs)  # ← храним ID, а не объекты
+    assigned_ids = set()
+    
+    while unassigned_ids:
+        level = []
+        for sq_id in list(unassigned_ids):
+            sq = by_id[sq_id]
+            if all(dep in assigned_ids for dep in sq.depends_on):
+                level.append(sq)
+                unassigned_ids.remove(sq_id)
+        if not level:
+            raise ValueError("Не удалось построить уровни (возможно, цикл)")
+        levels.append(level)
+        for sq in level:
+            assigned_ids.add(sq.id)
+    
+    return levels
+
 
 def _synthesize(
     question: str,
@@ -60,22 +124,51 @@ def _synthesize(
     answers: dict[int, WorkerAnswer],
 ) -> str:
     """Собрать финальный ответ одним LLM-вызовом без tools."""
-    # TODO (блок 3.3): реализовать синтез. Простейший путь:
-    # - соединить все answers в список по пунктам,
-    # - передать LLM с промптом «собери это в 1-2 фразы для пользователя»,
-    # - temperature=0.0, без tools.
-    # Или, если очень лень, — просто " · ".join(a.answer for a in answers.values()).
-    parts = [answers[i].answer for i in sorted(answers)]
-    return " · ".join(parts)  # заглушка: склейка через точки
+    if not answers:
+        return "(нет ответов)"
+
+    from llm_client import make_client, get_model
+
+    parts = []
+    for sq_id in sorted(answers):
+        a = answers[sq_id]
+        parts.append(f"Подвопрос {sq_id}: {a.answer}")
+
+    client = make_client()
+    try:
+        resp = client.chat.completions.create(
+            model=get_model(),
+            messages=[
+                {
+                    "role": "system",
+                    "content": "Ты — макроэкономический аналитик. Собери ответы на подвопросы в 1-2 связные фразы для пользователя. Ответь числом с единицей измерения."
+                },
+                {
+                    "role": "user",
+                    "content": f"Исходный вопрос: {question}\n\nОтветы на подвопросы:\n" + "\n".join(parts)
+                }
+            ],
+            temperature=0.0,
+            max_retries=2,
+        )
+        return resp.choices[0].message.content or " · ".join([a.answer for a in answers.values()])
+    except Exception:
+        return " · ".join([a.answer for a in answers.values()])
 
 
 def run_pwc(
-    question: str, *, max_iter: int = 3, verbose: bool = True
+    question: str, *, max_iter: int = 3, verbose: bool = True, validate: bool = False
 ) -> dict[str, Any]:
     """Запустить цикл Планировщик-Исполнитель-Критик."""
     trace: list[dict[str, Any]] = []
 
     plan = planner(question)
+    if validate:  # ← только если validate=True
+        errors = validate_plan(plan)
+        if errors:
+            if verbose:
+                print(f"\n[validator] Ошибки: {errors}")
+            plan = planner(question, feedback=f"Инструменты не существуют: {errors}")
     trace.append(
         {
             "iter": 0,
@@ -92,21 +185,24 @@ def run_pwc(
 
     for iter_num in range(1, max_iter + 1):
         answers: dict[int, WorkerAnswer] = {}
-        ordered = _topological_sort(plan.subquestions)
-        for sq in ordered:
-            ans = worker(sq, prev_answers=answers)
-            answers[sq.id] = ans
-            trace.append(
-                {
-                    "iter": iter_num,
-                    "kind": "worker",
-                    "sq_id": sq.id,
-                    "used_tools": ans.used_tools,
-                    "answer": ans.answer,
-                }
+        levels = _topological_levels(plan.subquestions)
+        for level in levels:
+            level_answers = execute_level_parallel(
+                level, answers, verbose=verbose
             )
-            if verbose:
-                print(f"  [{sq.id}] → {ans.answer}   tools={ans.used_tools}")
+            answers.update(level_answers)
+            for sq_id, ans in level_answers.items():
+                trace.append(
+                    {
+                        "iter": iter_num,
+                        "kind": "worker",
+                        "sq_id": sq_id,
+                        "used_tools": ans.used_tools,
+                        "answer": ans.answer,
+                    }
+                )
+                if verbose:
+                    print(f"  [{sq_id}] → {ans.answer}   tools={ans.used_tools}")
 
         verdict = critic(question, plan, answers)
         trace.append(
@@ -134,12 +230,25 @@ def run_pwc(
                 "iterations": iter_num,
             }
 
-        # TODO (блок 3.2): если verdict.action == "replan" — вызвать
-        #                  planner(question, feedback=verdict.reason).
-        #                  если verdict.action == "rework" — тоже planner,
-        #                  только feedback с указанием rework_ids.
-        # Сейчас просто break (чтобы не зацикливаться на заглушке).
-        break
+        # Обработка решений Критика
+        if verdict.action == "replan":
+            if verbose:
+                print(f"  [orchestrator] 🔄 Перепланировка: {verdict.reason}")
+            plan = planner(question, feedback=verdict.reason)
+            continue
+
+        elif verdict.action == "rework":
+            if verbose:
+                print(f"  [orchestrator] 🔄 Переделка подвопросов: {verdict.rework_ids}")
+            for sq_id in verdict.rework_ids:
+                sq = next((s for s in plan.subquestions if s.id == sq_id), None)
+                if sq:
+                    ans = worker(sq, prev_answers=answers)
+                    answers[sq_id] = ans
+            continue
+
+        else:
+            break
 
     return {
         "answer": None,

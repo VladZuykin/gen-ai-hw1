@@ -32,12 +32,6 @@ WORKER_TEMPLATE = """\
 
 def worker(sq: SubQuestion, prev_answers: dict[int, WorkerAnswer]) -> WorkerAnswer:
     """Исполнить один подвопрос с учётом зависимостей."""
-    # TODO (блок 2): собрать prev_context. Логика:
-    #   если sq.depends_on непусто — для каждого dep_id достать
-    #     prev_answers[dep_id] и собрать в строку вида
-    #     "  <id>. «<question_snippet>» → <answer>"
-    #   если sq.depends_on пусто — prev_context = "(нет зависимостей)".
-    #   если какого-то dep_id нет в prev_answers — упомянуть «ответ недоступен».
     if sq.depends_on:
         lines = []
         for dep_id in sq.depends_on:
